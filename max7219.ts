@@ -24,7 +24,7 @@ namespace max7219_matrix {
     /**
     * Setup/reset MAX7219s. If you are using 4-in-1 module you'll need to set rotation as true. If your chain are consisted of single modules set it as false (default).
     */
-    //% block="设置8X8点阵屏:|点阵屏数量 $num|CS(LOAD)引脚 = $cs|MOSI(DIN)引脚 = $mosi|MISO(未使用) = $SCK(CLK)引脚 = $sck"
+    //% block="设置8X8点阵屏:|点阵屏数量 $num|CS(LOAD)引脚 = $cs|MOSI(DIN)引脚 = $mosi|MISO(未使用) =$miso|SCK(CLK)引脚 = $sck"
     //% num.min=1 num.defl=1 cs.defl=DigitalPin.P16 mosi.defl=DigitalPin.P15 miso.defl=DigitalPin.P14 sck.defl=DigitalPin.P13 rotate.defl=false group="1. Setup"
     export function setup(num: number, cs: DigitalPin, mosi: DigitalPin, miso: DigitalPin, sck: DigitalPin) {
         // set internal variables        
